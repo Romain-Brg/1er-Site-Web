@@ -17,3 +17,32 @@ a{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.infoProfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.myWork h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.myWork ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.formContact{
+    display: flex;
+    flex-direction: column;
+}
