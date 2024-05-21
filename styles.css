@@ -1,27 +1,62 @@
+html {
+    height: 100%;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+
+body{
+    height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 h1{
     font-family:'Radio Big Canada', sans-serif;
+    font-size: 8em;
+    margin-left: 1%;
 }
 
 a{
     text-decoration: none;
+    color: white;
 }
-
+header{
+    height: 7%;
+}
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: aliceblue;
+    
+    
 }
 .navbar a{
     margin-left: 10%;
     margin-right: 10%;
+    color: #0f2027;
+    padding: 1%;
+    font-weight: bold;
+    font-family:'Radio Big Canada', sans-serif;
+}
+
+.navbar a:hover{
+    padding: 1%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .infoProfil{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-right: 3%;
 }
 
 .myWork h2{
@@ -29,20 +64,40 @@ a{
     margin-bottom: 3%;
 }
 
-.myWork ul{
+.listWork{
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+
+.listWork a{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+    height: 3.5em; 
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.listWork a:hover{
+    background-color: rgba(171,176,181,0.25);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 footer{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:right;
+}
+
+footer h3{
+    margin: 5%;
+    margin-top: 10%;
 }
 
 .formContact{
+    margin-top: 15%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
