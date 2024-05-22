@@ -3,9 +3,8 @@ html {
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
+    scroll-behavior:smooth
 }
-
-
 body{
     height: 100%;
 	width: 100%;
@@ -16,40 +15,50 @@ body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+/*index.thml*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(240, 240, 240, 0.25) ;
+}
+.navbar a{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+    font-family:'Radio Big Canada', sans-serif;
+}
+.navbar a:hover{
+    padding: 1%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+header{
+    height: 7%;
+}
 
 h1{
     font-family:'Radio Big Canada', sans-serif;
     font-size: 8em;
     margin-left: 1%;
 }
-
-a{
-    text-decoration: none;
-    color: white;
-}
-header{
-    height: 7%;
-}
-.navbar {
+.prenom{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: aliceblue;
-    
-    
-}
-.navbar a{
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #0f2027;
-    padding: 1%;
-    font-weight: bold;
-    font-family:'Radio Big Canada', sans-serif;
+    justify-content: space-between;
 }
 
-.navbar a:hover{
-    padding: 1%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+.textProfil{
+    width: 25%;
+    height: 15%;
+    border: 2px rgba(248, 248, 248, 0.555) dotted;
 }
 
 .infoProfil{
@@ -67,6 +76,7 @@ header{
 .listWork{
     display: grid;
     grid-template-columns:25% 25% 25% 25%;
+    margin-bottom: 15%;
 }
 
 .listWork a{
@@ -74,8 +84,7 @@ header{
     height: 3.5em; 
     justify-content: center;
     align-items: center;
-
-
+    border :2px rgba(240, 240, 240, 0.25) solid;
 }
 
 .listWork a:hover{
@@ -87,17 +96,78 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:right;
+    padding-bottom: 9%;
+    background-color: rgba(240, 240, 240, 0.25) ;
 }
 
 footer h3{
     margin: 5%;
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
+
+/*Contact.html*/
 .formContact{
     margin-top: 15%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+}
+
+/*pages de langages*/
+
+/* .projet_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.projet_1 h2{
+    margin-top: 300px;
+}
+
+.titreLangage{
+    margin-bottom: 20%;
+    margin-left: 10%;
+}
+
+.conteneurImagesProjets{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 600px;
+    width: 700px;
+}
+
+.conteneurImagesProjets img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoImageProjet img{
+    position: absolute;
+    right: 70px;
+    top: 0;
+    z-index: 2;
+}
+
+.codeImageProjet img{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: 3;
+    width: 400px;
+}
+
+.affichageImageProjet img{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 500px;
+    z-index: 1;
 }
