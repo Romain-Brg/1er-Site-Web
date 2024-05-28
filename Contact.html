@@ -12,12 +12,22 @@
 </head>
 
 <body>
+    <header class="entete">
+        <nav class="navbar">
+            <a href="index.html#encre_Work" alt="Click to see my work">My work</a>
+            <a href="index.html" alt="Acces the main page">Menu</a>
+        </nav>
+    </header>
+
     <main>
-            <div class="formContact">
-                <h3>Contact</h3>
-
-                <form action="" method="post">
-
+        <div class="formContact">
+            <p>
+                Since I don't have the capacity to receive any messages.<br> This page is just here to show that I can code a form in HTML/CSS.
+            </p>
+            <h2>Contact</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Contact details</legend>
                     <div class="formCompanyName"> 
                         <label for="CompanyName">Company name</label> <br>
                         <input type="text" name="CompanyName" id="CompanyName" size="30">
@@ -30,12 +40,15 @@
                         <label for="emailAdress">e-mail adress</label><br>
                         <input type="email" name="emailAdress" id="emailAdress">
                     </div> 
+                </fieldset>
+                <fieldset >
+                    <legend>Your message</legend>
                     <div class="formMessage">
-                        <label for="urMessage">Your message</label><br>
                         <textarea name="urMessage" id="urMessage"></textarea>
                     </div>
-                </form>
-            </div> 
+                </fieldset>    
+            </form>
+        </div> 
     </main>
 
 

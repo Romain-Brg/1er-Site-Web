@@ -95,6 +95,7 @@ h1{
 .listWork a:hover{
     background-color: rgba(171,176,181,0.25);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: 0;
 }
 
 footer{
@@ -113,11 +114,38 @@ footer h3{
 
 /*Contact.html*/
 .formContact{
-    margin-top: 15%;
+    margin-top: 8%;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+    align-items :center;
+}
+.formContact p{
+    font-style: italic;
+    padding-bottom: 8px;
+    text-align: center;
+    color: bisque;
+}
+.formContact label{
+    margin-top: 10px;
+}
+.formContact input,.formContact textarea {
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.formContact legend{
+    border: 2px rgb(129, 125, 125) solid;
+    border-radius: 4px;
+    padding: 4px;
+}
+.formContact fieldset{
+    border: 2px rgb(129, 125, 125) solid;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.formContact textarea{
+    width: 25em;
+    height: 5em;
 }
 
 /*pages de langages*/
@@ -140,6 +168,7 @@ footer h3{
     height: 15%;
     width: 80%;
     border: 2px rgb(107, 104, 104) solid;
+    border-radius: 6px;
     padding: 1%;
 }
 .projet_1 h2{
@@ -217,7 +246,7 @@ footer h3{
     position: absolute;
     left: 0;
     top: 90px;
-    z-index: 3;
+    z-index: 1;
     width: 400px;
 }
 
@@ -226,5 +255,5 @@ footer h3{
     right: 0;
     bottom: 20px;
     width: 500px;
-    z-index: 1;
+    z-index: 3;
 }
